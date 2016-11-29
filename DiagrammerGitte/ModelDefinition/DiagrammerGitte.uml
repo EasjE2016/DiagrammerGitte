@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
   dslVersion="1.0.0.0"
   Id="15aa61d9-a77c-4ffc-993e-0ccbf87faafb"
   name="DiagrammerGitte" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -17,28 +17,610 @@
         name="StandardProfileL3" />
     </packageHasProfileInstances>
   </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="a538f361-5ff5-4b80-a94a-76f0d120ab0e"
+        name="HusPrDag"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="b88a0edb-2e7f-48c4-809d-ce81197388c9"
+            isDerived="false"
+            sourceEndRoleName="Hus"
+            targetEndRoleName="DagsPlan"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="c0f963bc-717d-4765-bce9-5b55a89e343e"
+              LastKnownName="DagsPlan"
+              LastKnownLocation="DiagrammerGitte.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="50589bc1-564a-4ac1-8be7-aed963d41d69"
+                  name="Hus"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0c556bbb-8bb7-4732-ba39-d562fb3233ef"
+                  name="DagsPlan"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="71d64b5e-d578-401e-88b5-77271a24d61e"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="767bd47c-b1b1-4b2b-8c80-92577300f973"
+                      name="Upper"
+                      value=".7" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="afdabec3-ccce-4691-8c84-2b4364c2f187"
+            isDerived="false"
+            sourceEndRoleName="HusPrDag"
+            targetEndRoleName="AlleHusePrDagListe"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="5804f73c-c530-462a-97d6-0fcb83d9b899"
+              LastKnownName="AlleHusePrDagListe"
+              LastKnownLocation="DiagrammerGitte.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="deb0442f-d0b3-46aa-b2c1-dc085733d8c0"
+                  name="HusPrDag"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1d108434-5260-4997-945d-e6459060d40e"
+                  name="AlleHusePrDagListe"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="181f9811-214a-4b1f-b2b2-de1bb239b778"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="fdd2e945-46b3-43c8-be4d-6bd5dc9a5503"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="3bd41fc2-9414-493d-9a2a-aa544799bda3"
+            name="HusNr"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="c534d368-0d06-4fc9-a82e-6ee71caf5282"
+            name="Voksne"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="6399a2db-50a9-4460-8ad1-b0d8c2cb9fbf"
+            name="Teenagere"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="2da117b3-d241-4b81-a6a2-e20c7d7b92e0"
+            name="Børn 3-6"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="eedbc77d-c838-4ce3-b718-0f9bec70b0e7"
+            name="Børn under 3"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="c0f963bc-717d-4765-bce9-5b55a89e343e"
+        name="DagsPlan"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="dbdd05b1-b0b2-45bf-b036-3092a8ded566"
+            isDerived="false"
+            sourceEndRoleName="DagsPlan"
+            targetEndRoleName="AlleHuse"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="5804f73c-c530-462a-97d6-0fcb83d9b899"
+              LastKnownName="AlleHusePrDagListe"
+              LastKnownLocation="DiagrammerGitte.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f388b11c-a360-4944-b979-015188a17f5f"
+                  name="DagsPlan"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f3401b26-7205-4bc2-9919-f3b47994facd"
+                  name="AlleHuse"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="7dbb967a-fb68-4d79-b3e0-d0a89554ccd9"
+                      name="Lower"
+                      value="0" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="9c5b0a0b-c90c-45ab-9835-bfcf6be31bd9"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="ae64f561-e154-4625-aa63-7905bef5a42d"
+        name="Deltagere"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="ee55d1d0-fc44-4b91-a840-b411eba55513"
+        name="ChefKok"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="0715a679-a094-4332-9e81-c38c75a4ef77"
+            isDerived="false"
+            sourceEndRoleName="ChefKok"
+            targetEndRoleName="AlleHusePrDagListe"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="5804f73c-c530-462a-97d6-0fcb83d9b899"
+              LastKnownName="AlleHusePrDagListe"
+              LastKnownLocation="DiagrammerGitte.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="82da9d81-88c6-45c1-a3ad-77a8b1ca46d1"
+                  name="ChefKok"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a2782191-fa20-4ca9-ba86-2fb8608ded44"
+                  name="AlleHusePrDagListe"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="b0d4209e-afe1-490e-b963-47806095641a"
+            name="Navn"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="a81e1984-0fb7-46f5-b33d-c3e2e4a0cccc"
+            name="Udlæg"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="89ac3d39-f744-41c3-8f9d-f5864013bd71"
+            name="HusNr"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="5804f73c-c530-462a-97d6-0fcb83d9b899"
+        name="AlleHusePrDagListe"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="82730370-e709-41ae-8a7a-594fdcaab1ee"
+            isDerived="false"
+            sourceEndRoleName="AlleHuseListe"
+            targetEndRoleName="AlleHuseHeleUgenListe"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="d17a9ea6-f53c-499b-9347-2cb5742fe81e"
+              LastKnownName="AlleHuseHeleUgenListe"
+              LastKnownLocation="DiagrammerGitte.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="276e6985-3f84-4f85-9c7d-dd1c139c9879"
+                  name="AlleHuseListe"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="dd0caa64-77e3-4d8a-afc7-07605084429f"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="c7e499d4-69a2-42c8-92b1-b5fadfe2dd6e"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2a8c5f43-45de-4861-be0e-cd6bd8cec72b"
+                  name="AlleHuseHeleUgenListe"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="15466ad8-5216-4c6d-a6e2-5845b1a37641"
+                      name="Lower"
+                      value="7" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="bf4907b8-c91e-40c4-b891-234a375d39ae"
+                      name="Upper"
+                      value="7" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <enumeration
+        Id="ef45f1f0-c83a-4925-9126-2499a58678a1"
+        name="DagsPlan"
+        isAbstract="false"
+        isLeaf="false">
+        <ownedLiterals>
+          <enumerationLiteral
+            Id="14507f72-22dc-4887-980f-c3eba81a4712"
+            name="Mandag" />
+          <enumerationLiteral
+            Id="21cdc9fb-8929-453b-933d-a48a0dff2055"
+            name="Tirsdag" />
+          <enumerationLiteral
+            Id="6b51bd09-8008-410d-bff2-6cb2007042ba"
+            name="Onsdag" />
+          <enumerationLiteral
+            Id="876f1d7c-1158-4b6a-aec2-0540006e3fb8"
+            name="Torsdag" />
+          <enumerationLiteral
+            Id="2fd176a8-b285-4a1e-9356-8b02d120948a"
+            name="Fredag" />
+          <enumerationLiteral
+            Id="1ef658e4-1d8e-444e-8b1e-05cb4c354b9d"
+            name="Lørdag" />
+          <enumerationLiteral
+            Id="d71ba8aa-4a6f-46e9-b686-0e5d071b9941"
+            name="Søndag" />
+        </ownedLiterals>
+      </enumeration>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="d17a9ea6-f53c-499b-9347-2cb5742fe81e"
+        name="AlleHuseHeleUgenListe"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="7fc03aec-7edb-4da0-a423-51b5277244a2">
+            <enumerationMoniker
+              Id="ef45f1f0-c83a-4925-9126-2499a58678a1"
+              LastKnownName="DagsPlan"
+              LastKnownLocation="DiagrammerGitte.uml" />
+          </dependency>
+        </suppliersInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="0df5d8ff-700b-4031-b4df-2c07ef256c91"
+        name="UgeMadPlan"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="7c32b3bb-fe46-4f52-937e-4d0a3620e89d">
+            <enumerationMoniker
+              Id="ef45f1f0-c83a-4925-9126-2499a58678a1"
+              LastKnownName="DagsPlan"
+              LastKnownLocation="DiagrammerGitte.uml" />
+          </dependency>
+        </suppliersInternal>
+        <targetEnds>
+          <association
+            Id="20266158-63f8-436f-84c5-f32d5a54f206"
+            isDerived="false"
+            sourceEndRoleName="UgeMadPlan"
+            targetEndRoleName="ChefKok"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="ee55d1d0-fc44-4b91-a840-b411eba55513"
+              LastKnownName="ChefKok"
+              LastKnownLocation="DiagrammerGitte.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b9dd99ee-b07e-48d6-90a0-20206938eb13"
+                  name="UgeMadPlan"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="2a046e7b-3d65-413b-84c4-5adc9a60a815"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="3435763a-781f-40e6-8020-36a9ff9f6262"
+                      name="Upper"
+                      value="7" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="00b113aa-5a95-46d4-b3f5-7108a22deed7"
+                  name="ChefKok"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="fc2a034d-6290-471c-b422-fac11fa1124d"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="76743d3d-d70e-4fc9-932a-228cf206b37f"
+                      name="Upper"
+                      value="7" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="49fe4446-ec15-4a40-ac79-9f2303c41c80"
+            name="Menu"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="c1e7e5ee-bcf0-4e52-8133-8ed412ffdd6b"
+            name="ChefKok"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="89a95a84-ac50-40e8-9bdd-70f2f76785c6"
+            name="Hjælpere"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="fc4caa58-85ac-493c-976c-81c917560064"
+            name="Oprydning"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
   <primitiveType
     Id="220a3521-e091-4221-bae9-3ef9018e845c"
     name="Integer"
     isAbstract="false"
-    isTemplate="false"
     isLeaf="false" />
   <primitiveType
     Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
     name="Boolean"
     isAbstract="false"
-    isTemplate="false"
     isLeaf="false" />
   <primitiveType
     Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
     name="String"
     isAbstract="false"
-    isTemplate="false"
     isLeaf="false" />
   <primitiveType
     Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
     name="UnlimitedNatural"
     isAbstract="false"
-    isTemplate="false"
     isLeaf="false" />
 </modelStoreModel>
