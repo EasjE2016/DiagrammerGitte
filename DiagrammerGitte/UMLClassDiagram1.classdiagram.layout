@@ -34,7 +34,7 @@
         <classShapeMoniker Id="089edb3d-f327-4b27-ad3f-08210c20dfa7" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(7.1562505 : 4.375); (7.1562505 : 2.40397892476514); (6.5 : 2.40397892476514)]" fixedFrom="Algorithm" fixedTo="Caller" customColor="113, 111, 110" sourceMultiplicity="1" targetMultiplicity="1">
+    <associationConnector edgePoints="[(7.0625 : 4.375); (7.0625 : 2.40397892476514); (6.5 : 2.40397892476514)]" fixedFrom="Algorithm" fixedTo="Caller" customColor="113, 111, 110" sourceMultiplicity="1" targetMultiplicity="1">
       <associationMoniker Id="94d9a5ca-99b0-4ec5-8d82-dde801322884" />
       <relativeChildShapes />
       <nodes>
